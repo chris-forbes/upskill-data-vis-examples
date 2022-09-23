@@ -41,6 +41,8 @@ fn main() {
             println!("Word: {}\t percentage of total: {}%", k, distribution);
         }
         println!("{}","=".repeat(100));
+        println!("Min & Max");
+        println!("{}","=".repeat(100));
         let max = value_sums.iter().max_by(|a, b| a.1.cmp(&b.1)).map(|(k, _v)| k).unwrap();
         let min = value_sums.iter().min_by(|a, b| a.1.cmp(&b.1)).map(|(k, _v)| k).unwrap();
         println!("Word: {}\t Max: {}", max, value_sums[max]);
